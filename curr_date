@@ -1,0 +1,35 @@
+var curr = new Date();
+>> undefined
+var dd = curr.getDate();
+>> undefined
+var mon = curr.getMonth()+1;
+>> undefined
+var yyyy = curr.getYear();
+>> undefined
+curr
+// output :: Thu Jun 29 2023 02:42:27 GMT-0700 (Pacific Daylight Time)
+dd
+// output :: 29
+
+mon
+// output :: 6
+
+var yyyy = curr.getFullYear();
+>> undefined
+yyyy
+// output :: 2023
+console.log(mon+'-'+dd+'-'+yyyy);
+
+// output ::  6-29-2023
+>> undefined
+console.log(mon+'/'+dd+'/'+yyyy);
+// output ::  6/29/2023
+>> undefined
+console.log(dd+'/'+mon+'/'+yyyy);
+
+// output ::  29/6/2023
+>> undefined
+console.log(dd+'-'+mon+'-'+yyyy);
+
+// output ::  29-6-2023
+>> undefined
