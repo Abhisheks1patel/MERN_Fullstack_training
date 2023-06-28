@@ -1,0 +1,23 @@
+// /write a js code to display the day and time in format
+
+var date = new Date();
+
+date
+// output ::  Wed Jun 28 2023 13:05:29 GMT-0700 (Pacific Daylight Time)
+
+var day = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+var currday = day[date.getDay()];
+ console.log(`today day is : ${currday}` ); 
+
+//output::  today day is : wednesday
+
+var h = date.getHours();
+var m = date.getMinutes();
+var s = date.getSeconds();
+
+var am_pm = date.getHours() >= 12 ? "PM" : "AM";
+        h = h < 10 ? "0" + h : h;
+ console.log(`current time is :  ${h} ${am_pm}  : ${m} : ${s}`);
+
+//output
+ current time is :  13 PM  : 5 : 29
