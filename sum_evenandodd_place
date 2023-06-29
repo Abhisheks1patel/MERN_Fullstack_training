@@ -1,0 +1,29 @@
+// a JavaScript function that Print Sum of Even Place and Odd Place Digit
+
+//E.g num = 2914
+//O/p Even Place (9+4)
+//Odd Place 2+1
+
+function val(number) {
+     var numString = String(number);
+     var even = 0;
+  var odd = 0;
+ 
+  for (var i = 0; i < numString.length; i++) {
+    var digit = parseInt(numString[i]);
+      if (i % 2 === 0) {
+      even+= digit;
+    } else {
+      odd += digit;
+    }
+  }
+    console.log( even);
+  console.log( odd);
+}
+
+input :: val(234);
+
+output ::
+even - 4
+ odd -6
+
