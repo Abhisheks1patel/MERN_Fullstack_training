@@ -1,0 +1,14 @@
+//Write a JS Function to validate Phone Number 
+//Only number and must be 10 digit long
+
+
+
+function validatePhoneNumber(phoneNumber) {
+  const regex = /^\d{10}$/;
+  return regex.test(phoneNumber);
+}
+
+// Example usage:
+const phoneNumber = '123-456-7890';
+const isValid = validatePhoneNumber(phoneNumber);
+console.log(isValid); // Output: true
