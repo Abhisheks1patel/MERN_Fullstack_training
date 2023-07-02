@@ -1,0 +1,13 @@
+//3..Write a function that takes a string as input and returns the number of vowels (a, e, i, o, u) in the string.
+//Count of vowels in string;
+//ex:- str = "brainmentors"
+
+
+var str = "brainmentors";
+undefined
+var array = str.split("");
+undefined
+array
+(12) ['b', 'r', 'a', 'i', 'n', 'm', 'e', 'n', 't', 'o', 'r', 's']
+array.filter(e  => e== 'a' ||  e== 'i' ||  e== 'e' || e == 'o' ||  e== 'u').length;
+4
