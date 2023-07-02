@@ -1,0 +1,6 @@
+// 4. Write a function to find the sum of all elements in an array.
+// ex:- arr = [1,2,3,4,5];
+
+var array = [1,2,3,4,5];
+array.reduce((accumulator,currentValue)=> accumulator+currentValue , 0);
+15
