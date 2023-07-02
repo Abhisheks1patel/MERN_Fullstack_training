@@ -1,0 +1,16 @@
+
+//Write a JS Function to validate Email Address
+//Must contains @
+//Must ends with .com/.org/.edu
+
+
+
+function validateEmailAddress(email) {
+  const regex = /^[^\s@]+@[^\s@]+\.(com|org|edu)$/;
+  return regex.test(email);
+}
+
+// Example usage:
+const email = 'example@example.com';
+const isValid = validateEmailAddress(email);
+console.log(isValid); // Output: true
