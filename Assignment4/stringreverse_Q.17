@@ -1,0 +1,16 @@
+// 2.Reverse a given string using reverse() method 
+//input = "BrainMentors"
+//output = "srotnemniarB"
+// undefined
+var value = "brainmentors";
+// undefined
+var array = value.split("");
+// undefined
+array
+(12) ['b', 'r', 'a', 'i', 'n', 'm', 'e', 'n', 't', 'o', 'r', 's']
+array.reverse();
+(12) ['s', 'r', 'o', 't', 'n', 'e', 'm', 'n', 'i', 'a', 'r', 'b']
+var a = array.join("");
+// undefined
+a;
+'srotnemniarb'
