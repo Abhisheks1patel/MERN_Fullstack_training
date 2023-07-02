@@ -1,0 +1,26 @@
+// Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word into upper case.
+// Example string : ‘learn javascript from brain mentors’
+// Expected Output : ‘Learn Javascript From Brain Mentors
+
+
+function capitalizeFirstLetter(str) {
+  // Split the string into an array of words
+  const words = str.split(' ');
+
+  // Capitalize the first letter of each word
+  const capitalizedWords = words.map(word => {
+    const firstLetter = word.charAt(0).toUpperCase();
+    const restOfWord = word.slice(1);
+    return firstLetter + restOfWord;
+  });
+
+  // Join the capitalized words back into a single string
+  const capitalizedString = capitalizedWords.join(' ');
+
+  return capitalizedString;
+}
+
+// Example usage:
+const input = 'learn javascript from brain mentors';
+const output = capitalizeFirstLetter(input);
+console.log(output); // Output: "Learn Javascript From Brain Mentors"
