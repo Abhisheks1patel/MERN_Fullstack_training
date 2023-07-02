@@ -1,0 +1,14 @@
+// 5.Write a function to reverse the order of elements in an array.
+// don't Use reverse() Method 
+// ex:- var arr = ['a','b','c','d','e','f']
+			
+// 		output = ['f','e','d','c','b','a']
+
+var arr = ['a','b','c','d','e','f'];
+undefined
+var array=[];
+undefined
+for(var i = arr.length-1;i>=0;i--){ array[arr.length-i] = arr[i]; }
+'a'
+array
+(7) [empty, 'f', 'e', 'd', 'c', 'b', 'a']
