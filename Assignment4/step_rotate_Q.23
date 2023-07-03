@@ -1,0 +1,24 @@
+//.Write a function to rotate an array by a given number of steps to the right.
+
+//ex:- arr = [1,2,3,4,5];
+	//	step = 2;
+
+ // output = [5,4,1,2,3]
+
+function rotateArray(arr, steps) {
+  var effectiveSteps = steps % arr.length;
+
+  if (effectiveSteps === 0) {
+    return arr;
+  }
+
+  var rotatedArr = arr.slice(-effectiveSteps).concat(arr.slice(0, -effectiveSteps));
+
+  return rotatedArr;
+}
+
+// Example usage
+var arr = [1, 2, 3, 4, 5];
+var steps = 2;
+var rotatedArr = rotateArray(arr, steps);
+console.log(rotatedArr);
